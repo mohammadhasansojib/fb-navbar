@@ -1,0 +1,169 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+    /* color: white; */
+}
+body{
+    /* background-color: lightcoral; */
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    background-color: #242526;
+}
+header .container{
+    padding: 5px 10px;
+}
+header .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header .container .row .logo-and-search-box{
+    display: flex;
+    align-items: center;
+}
+header .container .row .logo-and-search-box .logo i{
+    color: #0866FF;
+    font-size: 40px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+header .container .row .logo-and-search-box .search-box{
+    display: flex;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 0 7px;
+}
+header .container .row .logo-and-search-box .search-box .search-icon svg{
+    color: rgb(223, 224, 224);
+    font-size: 14px;
+    margin: 0 5px;
+    margin-top: 6px;
+    
+}
+header .container .row .logo-and-search-box .search-box .search-input input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: auto;
+    font-size: 16px;
+    color: rgb(224, 225, 226);
+    font-weight: 300;
+
+}
+header .container .row .logo-and-search-box .search-box .search-input input::placeholder{
+    color: rgb(145, 145, 145);
+    font-weight: 200;
+}
+
+
+
+header .container .row nav{
+    display: flex;
+    align-items: center;
+}
+header .container .row nav .icon{
+    /* background-color: rgba(128, 128, 128, 0.407); */
+    margin: 0 5px;
+    padding: 7px 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+header .container .row nav .icon:hover{
+    background-color: rgba(105, 105, 105, 0.407);
+}
+header .container .row nav .icon svg{
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 5px;
+    color: rgb(179, 178, 178);
+}
+
+
+
+
+
+header .container .row .msg-and-notification{
+    display: flex;
+    align-items: center;
+}
+header .container .row .msg-and-notification .icon{
+    background-color: rgb(70, 70, 70);
+    margin: 0 5px;
+    padding: 3px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+header .container .row .msg-and-notification .icon svg{
+    color: rgb(245, 244, 244);
+    margin-top: 5px;
+    font-size: 20px;
+    
+}
+header .container .row .msg-and-notification .profile-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 4px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1259px){
+    header .container .row .logo-and-search-box .search-box .search-input{
+        display: none;
+    }
+    header .container .row .logo-and-search-box .search-box{
+        padding: 5px 7px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    header .container .row nav .icon{
+        margin: 0 5px;
+        padding: 7px 30px;
+    }
+    header .container .row nav .icon svg{
+        display: inline-block;
+        font-size: 22px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    header .container .row nav .icon{
+        margin: 0 5px;
+        padding: 7px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header .container .row nav{
+        display: none;
+    }
+}
